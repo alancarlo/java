@@ -7,8 +7,7 @@ public class Pessoa {
     private double altura;
 
     public Pessoa(){
-        Object parentComponent;
-        String message;
+      
         setNome(
             JOptionPane.showInputDialog(
                 null, "Insira o nome")
@@ -71,5 +70,14 @@ public class Pessoa {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+    public void info(){
+        JOptionPane.showMessageDialog(null,
+        "Nome:"+ getNome()+
+        "Idade: "+ getNome()+
+        "Altura: "+ getAltura()+
+        "Peso: "+ getPeso()
+        );
+        
     }
 }
